@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 :root {
     --color-brand: #2196f3;
     --color-background: #ffff;
@@ -11,6 +15,17 @@ body{
     font-size: 14px;
     font-weight: 400;
     background-color: var(--color-background);
+}
+
+.container {
+    width: 100%;
+    max-width: 1202px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section{
+    padding: 47px 0 47px 0;
 }
 
 footer{
@@ -57,7 +72,9 @@ footer{
     font-weight: 500;
     line-height: 16.41px;
     text-decoration: none;
+    margin-right: 50px;
 }
+
 
 .link-header:hover{
     color: var(--color-brand);
@@ -75,6 +92,7 @@ footer{
     font-size: 14px;
     font-weight: 500;
     text-decoration: none;
+    margin-right: 50px;
 }
 
 
@@ -97,6 +115,7 @@ footer{
     text-transform: uppercase;
 }
 .primery-button{
+    padding: 10px 32px 10px 32px;
     color: #ffff;
     background-color: #2196f3;;
     font-family: "Roboto", "Raleway", sans-serif;
@@ -105,6 +124,7 @@ footer{
     line-height: 1.8;
     border: 1px;
     cursor: pointer;
+    border-radius: 4px;
 }
 
 .primery-button:hover{
@@ -113,6 +133,7 @@ footer{
 
 .section-title{
     color: var(--color-text-primary);
+    margin-bottom: 50px;
 }
 
 .advantage-card{
@@ -120,6 +141,7 @@ footer{
     font-weight: 700;
     line-height: 1.1;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .advantage-card-text{
@@ -140,6 +162,7 @@ footer{
     font-size: 16px;
     font-weight: 500;
     line-height: 1.1;
+    margin-bottom: 10px;
 }
 .team-card-profesion{
     color: var(--color-text-secondary);
@@ -201,3 +224,9 @@ ul{
     font-size: 16px;
     line-height: 1.8;
 }
+
+/* h1, */
+/* h2, h3, p, ul { */
+    margin: 0;
+    padding: 0;
+/* } */
