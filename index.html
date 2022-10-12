@@ -20,29 +20,35 @@
   <body>
     <header>
       <div class="container">
-        <nav>
-          <a href="./index.html" class="logo-primary"><span>Web</span>Studio</a>
-          <ul>
+        <div class="header-container">
+          <nav class="header-nav">
+            <a href="./index.html" class="logo-primary"
+              ><span>Web</span>Studio</a
+            >
+            <ul class="header-menu">
+              <li>
+                <a href="./index.html" class="link-header current-page"
+                  >Студія</a
+                >
+              </li>
+              <li>
+                <a href="./portfolio.html" class="link-header">Портфоліо</a>
+              </li>
+              <li>
+                <a href="#" class="link-header">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="mail-tel-section">
             <li>
-              <a href="./index.html" class="link-header current-page">Студія</a>
+              <a href="#" class="mail-tel-link"> info@devstudio.com</a>
             </li>
             <li>
-              <a href="./portfolio.html" class="link-header">Портфоліо</a>
-            </li>
-            <li>
-              <a href="#" class="link-header">Контакти</a>
+              <a href="#" class="mail-tel-link">+380961111111</a>
             </li>
           </ul>
-        </nav>
-
-        <ul>
-          <li>
-            <a href="#" class="mail-tel-section"> info@devstudio.com</a>
-          </li>
-          <li>
-            <a href="#" class="mail-tel-section">+380961111111</a>
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -58,8 +64,8 @@
       <!--advantages-->
       <section class="section">
         <div class="container">
-          <h2>Наші особливості</h2>
-          <ul>
+          <!-- <h2>Наші особливості</h2> -->
+          <ul class="advantage-section">
             <li>
               <h3 class="advantage-card">Увага до деталей</h3>
               <p class="advantage-card-text">
@@ -97,19 +103,21 @@
       <section class="section">
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
-          <img src="./images/img1.jpg" alt="планшет клавіатура руки" />
-          <img src="./images/img2.jpg" alt="телефон ноутбук" />
-          <img
-            src="./images/img3.jpg"
-            alt="планшет комп'ютор кольорова схема"
-          />
+          <div class="section-img">
+            <img src="./images/img1.jpg" alt="планшет клавіатура руки" />
+            <img src="./images/img2.jpg" alt="телефон ноутбук" />
+            <img
+              src="./images/img3.jpg"
+              alt="планшет комп'ютор кольорова схема"
+            />
+          </div>
         </div>
       </section>
       <!--our team-->
       <section class="our-team section">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
-          <ul>
+          <ul class="team-section">
             <li class="team-card-box">
               <img
                 src="./images/img2_1.jpg"
@@ -118,6 +126,7 @@
               <h3 class="team-card">Ігор Дем'яненко</h3>
               <p class="team-card-profesion">Product Designer</p>
             </li>
+
             <li class="team-card-box">
               <img
                 src="./images/img2_2.jpg"
@@ -126,11 +135,13 @@
               <h3 class="team-card">Ольга Рєпіна</h3>
               <p class="team-card-profesion">Frontend Developer</p>
             </li>
+
             <li class="team-card-box">
               <img src="./images/img2_3.jpg" alt="усміхнений хлопець" />
               <h3 class="team-card">Микола Тарасов</h3>
               <p class="team-card-profesion">Marketing</p>
             </li>
+
             <li class="team-card-box">
               <img
                 src="./images/img2_4.jpg"
@@ -149,7 +160,7 @@
           <span>Web</span>Studio</a
         >
         <address>
-          <ul>
+          <ul class="kontacts-section">
             <li>
               <a
                 href="https://goo.gl/maps/1QqmrfdniTkJALDH8"
