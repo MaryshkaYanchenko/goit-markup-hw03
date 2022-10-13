@@ -7,6 +7,7 @@
     --color-background: #ffff;
     --color-text-primary: #212121;
     --color-text-secondary: #757575;
+    --projects-set-gap: 30px;
 }
 
 body{
@@ -23,7 +24,7 @@ body{
     margin: 0 auto;
     padding: 0 15px;
 
-    outline: 2px solid red;
+    /* outline: 2px solid red; */
 }
 
 .header-container{
@@ -77,6 +78,8 @@ footer{
     font-weight: 700;
     line-height: 1.4;
     text-decoration: none;
+
+    margin-top: 60px;
 }
 
 .logo-primary-footer > span {
@@ -234,6 +237,7 @@ footer{
 
 .kontacts-section{
     margin-top: 20px;
+    padding: 0;
     
 }
 
@@ -261,14 +265,36 @@ ul{
     text-decoration: none;
 }
 
+/* .filter-container{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  gap: 8px;
+} */
+
+
+.filter-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 73px;
+    margin-bottom: 50px;
+}
+
 .primary-button-portfolio{
     color: var(--color-text-primary);
     background-color: #f5f4fa;
-    font-family: inherit;
+    font-family: "Roboto", inherit;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.6;
     cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+    border: 0;
+
+    padding: 6px 22px;
 }
 
 .primary-button-portfolio:hover{
@@ -276,20 +302,60 @@ ul{
     background-color: var(--color-brand);
 }
 
-/* .projects{ */
-    background-color: #eeee;
+.projects-set{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--projects-set-gap));
+    margin-top: calc(-1 * var(--projects-set-gap));
+
+    margin-bottom: 115px;
+
+}
+
+.projects{
+    background-color: #ffff;
+    /* border: 1px solid #eeee; */
+
+    flex-basis: calc(100% / 3 - var(--projects-set-gap));
+    margin-left: var(--projects-set-gap);
+    margin-top: var(--projects-set-gap);
+
 }
 
 .projects-name{
     font-size: 18px;
     font-weight: 700;
+    
     line-height: 2;
+    text-align: left;
+
 }
 
 .projects-type{
     color: #757575;
     font-size: 16px;
+    
+    
     line-height: 1.8;
+    text-align: left;
+
+}
+
+.project-content{
+    padding: 20px 24px 20px 24px;
+    border-bottom: 1px solid #eeee;
+    border-left: 1px solid #eeee;
+    border-right: 1px solid #eeee;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 /* h1,
